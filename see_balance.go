@@ -76,6 +76,7 @@ func SeeBalance() {
 	timestamp = GenerateTimestamp()
 	signed_str = SignedStr_Gen("GET", "/v2/assets/futures/balance", "", timestamp)
 	BuildAuthRequest( signed_str, "GET", "/assets/futures/balance", timestamp)
+	return
 }
 
 func main() {
